@@ -7,3 +7,5 @@ Package i use
 
 Optional Features
 - Search
+
+i use iphone 11 as simulator
