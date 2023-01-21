@@ -111,6 +111,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
           .retry(DelayRetryStrategy(maxRetryCount: 3, retryInterval: .seconds(10)))
           .onSuccess { _ in
             cell.indicatorView.stopAnimating()
+            cell.indicatorView.isHidden = true
           }
           .set(to: cell.mealImageView)
       }).disposed(by: disposeBag)
