@@ -54,7 +54,7 @@ class ViewController: UIViewController {
   }
 
   private func searchValue() {
-    self.searchTextField.rx.controlEvent(.editingDidEndOnExit)
+    self.searchTextField.rx.controlEvent(.allEditingEvents)
       .asObservable()
       .map {
         self.searchTextField.text
